@@ -1,0 +1,215 @@
+
+h1, h2, h3, h4, h5, ul, ol, body, p {margin: 0; padding: 0;}
+* {box-sizing: border-box;}
+img {max-width: 100%}
+
+
+@font-face {
+    font-family: 'lausanne';
+    src: url('fonts/lausanne-regular2032-webfont.woff2') format('woff2'),
+         url('fonts/lausanne-regular2032-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    font-size: 1.5vw;
+    line-height: 1.4em;
+}
+
+body {
+    font-family: 'lausanne';
+    padding: 20px;
+    background: linear-gradient(#5546ddf3, #d4a0af, #ffffff);
+    min-height: 100vh;
+}
+
+
+/* ~~~~~~~~~~~~~Hypertext~~~~~~~~~~~~~~~*/
+
+header nav ul {
+    font-size: 20px;
+    list-style: none;
+    line-height: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+header nav ul li{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+main.hypertext{
+    font-size: 2.5rem;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.link_info, .link_index, .link_research{
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.references ul li{
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.link_info:visited, .link_index:visited, .link_research:visited, .references:visited {
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+
+span {
+    position: relative;
+   border: 2px solid #000;
+   border-radius: 3rem;
+   padding: 0 20px;
+   display: inline-block;
+   cursor: pointer;
+}
+
+span img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0rem;
+    top: 4rem;
+    z-index: 100;
+    display: none;
+}
+
+span iframe{
+    position: absolute;
+    left: -3rem;
+    width: 20rem;
+    height: 11.5rem;
+    top: -15rem;
+    display: none;
+}
+
+.imagem-button1, .imagem-button2, .imagem-button3, .imagem-button4, .imagem-button5{
+    display: none;
+    position: fixed;
+    width: 400px;
+    right: 100px;
+    top: 100px;
+}
+
+.imagem-button1, .imagem-button2, .imagem-button3, .imagem-button4, .imagem-button5 img{
+    width: 100%;
+    height: auto;
+}
+
+/* ~~~~~~~~~~~~~Info~~~~~~~~~~~~~~~*/
+
+.info {
+    font-size: 2.5rem;
+    line-height: 1.1em;
+}
+
+ h3{
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info div{
+    margin-bottom: 1rem;
+}
+
+
+.references .reference-box{
+    margin-bottom: 1rem;
+}
+
+.references a{
+    text-decoration: none;
+    color: #000;
+}
+
+.author div{
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 769px){
+    :root{
+        font-size: 3vw;
+        line-height: 1.4em;
+    }
+
+    /*
+    .hypertext{
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    .info {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    h3{
+        margin-top: 2rem;
+        font-weight: normal;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .project, .author, .references, .etic{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    */
+}
+
+
+
+/* ~~~~~~~~~~~~~Media Queries~~~~~~~~~~~~~~~*/
+@media screen and (max-width: 577px){
+    :root{
+        font-size: 3.6vw;
+        line-height: 1.4em;
+    }
+
+    /*
+    nav ul li {
+        font-size: 2rem;
+    }
+
+    .hypertext{
+        font-size: 4rem;
+    }
+
+    .info {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    h3{
+        margin-top: 2rem;
+        font-weight: normal;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .project, .author, .references, .etic{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    */
+
+}
+
+
+

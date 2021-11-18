@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real</title>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/ayv1sne.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="info.html" class="link_info">Info</a></li>
+                    <li><a href="index.html"class="link_index">Real</a></li>
+                    <li><a href="research.html" class="link_research">Research</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hypertext">
+            <div class="hypertext">
+                <p style="margin-top: 30px;">
+                    Some time ago a group of people were sitting in a restaurant, and one of them asked the others to say what they meant by <span class="btn button1">Reality<img src="images-index/sunset.png"></span>. There was much vague discussion, much talk of metaphysics and <span class="btn button2">psychology<img src="images-index/mirror.png"></span>, but one of those present, when asked his opinion, simply shrugged his shoulders and pointed at the saltshaker. He was amazed to find that no one understood him, yet he had intended to be neither clever nor <span class="btn button3">obscure<img src="images-index/darksmoke.png"></span>. His idea was just to give a commonsense answer to the question, on the <span class="btn button4">ordinary<img src="images-index/street.png"></span> assumption that Reality is whatever exists. He was not understood because his friends, in common with many others, regarded Reality as a special kind of existence and <span class="btn button5">Life<img src="images-index/flower.png"></span> (with a capital L) as a particular way of living. Thus we often meet those who talk about the difference between being a mere clod, a mere “animated stomach,” and a real person; between those who simply exist and those who really live.
+                </p>
+                <p style="margin-top: 20px;"> 
+                    <span class="button6">Alan Watts<iframe id="video" src="https://www.youtube.com/embed/gbngLDPSaDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+                </p>
+            </div>
+
+        </main>
+
+
+
+
+    <script src="js/jquery.min.1.7.js"></script>
+    <script>
+        $('.btn').hover(function(){
+            $(this).find('img').stop().fadeIn();
+        },function(){
+            $(this).find('img').stop().fadeOut();
+        })
+        /*
+        $('.button6').hover(function(){
+            $(this).find('iframe').stop().fadeIn();
+            $('iframe')[0].src += "&autoplay=1";
+        },function(){
+            $(this).find('iframe').stop().fadeOut();
+        })
+        */
+        $('.button6').on('click', function(ev) {
+            $("#video").fadeToggle();
+		});
+
+    </script>
+
+    </body>
